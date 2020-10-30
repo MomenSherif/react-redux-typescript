@@ -1,0 +1,26 @@
+.contained {
+  background-color: gold;
+}
+
+.contained::after {
+  content: "contained";
+  margin-left: 5px;
+}
+
+.outlined {
+  border: 1px solid gold;
+}
+
+.outlined::after {
+  content: "outlined";
+  margin-left: 5px;
+}
+
+.text {
+  color: goldenrod;
+}
+
+.text::after {
+  content: "text";
+  margin-left: 5px;
+}
