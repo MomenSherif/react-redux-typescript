@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
-
-const usePromise = <T>(promise: Promise<T>, dep: [] = []) => {
+const usePromise = <T = any>(promise: Promise<T>, dep: [] = []) => {
   const [state, setState] = useState<{ loading: boolean, data: T | null, error: Error | null, }>({
     loading: false,
     data: null,
