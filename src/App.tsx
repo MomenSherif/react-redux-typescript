@@ -8,7 +8,7 @@ type AppProps = {
   /** array of a type! */
   names: string[];
   /** string literals to specify exact string values, with a union type to join them together */
-  status: "waiting" | "success";
+  status: 'waiting' | 'success';
   /** any object as long as you dont use its properties (NOT COMMON but useful as placeholder) */
   obj: object;
   obj2: {}; // almost the same as `object`, exactly the same as `Object`
@@ -43,11 +43,24 @@ type UsefulProps = {
   children: React.ReactNode; // best, accepts everything
   functionChildren: (name: string) => React.ReactNode; // recommended function as a child render prop type
   style?: React.CSSProperties; // to pass through style props
-}
+};
 
+/**
+ * we can omit a proptype ButtonProps
+ * type BUttonProps = Omit<Props, 'onClick'>
+ *
+ * get components props that nor exported
+ * type Props = React.componentProps<typeof Button>
+ *
+ * get return type of a function
+ * type returnType = ReturnType<typeof theFunction>
+ *
+ * get partial type of an object
+ * type partialProps = Partial<typeof theObject>
+ *
+ */
 
 function App() {
-
   return (
     <div className='App container'>
       <Button variant='contained' style={{ fontSize: 40 }}>
@@ -56,9 +69,7 @@ function App() {
       <Button variant='outlined' className='text-danger'>
         Hello, World!
       </Button>
-      <Button variant='text'>
-        Hello, World!
-      </Button>
+      <Button variant='text'>Hello, World!</Button>
     </div>
   );
 }
