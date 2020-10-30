@@ -7,4 +7,4 @@
 - [x] Class Components 👴🏻
 - [x] Prop Types & Custom Components 📦
 - [x] Context API 🗂️
-- [] Redux
+- [ ] Redux
