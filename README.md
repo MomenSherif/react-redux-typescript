@@ -9,4 +9,4 @@
  - [x] Class Components 👴🏻 [Branch](https://github.com/MomenSherif/react-redux-typescript/tree/3--class-components)
  - [x] Prop Types & Custom Components 📦 [Branch](https://github.com/MomenSherif/react-redux-typescript/tree/4--prop-types)
  - [x] Context API 🗂️ [Branch](https://github.com/MomenSherif/react-redux-typescript/tree/5--context-api)
- - [ ] Redux
+ - [x] Redux 🔥 [Branch](https://github.com/MomenSherif/react-redux-typescript/tree/6--redux)
